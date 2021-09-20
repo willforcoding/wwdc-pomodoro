@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-body">
+            <div class="timer">
+                <h1 id="status"> STATUS</h1>
+                <p id="time-display">00:00</p>
+            </div>
+            <div class="button-container">
+                <button id="work-btn">Work</button>
+                <button id="short-break-btn">Short break</button>
+                <button id="long-break-btn">Long break</button>
+            </div>
+            <div class="button-container">
+                <button id="pause-btn" class="red-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+                <button id="turbo-btn">Turbo</button>
+            </div>
+        </div>
+
+        <div class="log-container">
+            <p>TOTAL WORK: <span id="total-work">00:00:00</span> </p>
+            <p>TOTAL BREAK: <span id="total-break">00:00:00</span> </p>
+            <div class="entry-container">
+                <ul id="time-entry">
+                </ul>
+            </div>
+        </div>
+    </div>
+    </audio>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
